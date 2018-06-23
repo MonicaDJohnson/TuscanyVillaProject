@@ -11,9 +11,11 @@
     font-family: 'Noto Sans', sans-serif;
 }
 
-.grid-item-1 { /*//nav bar*/
-    grid-column: 1 / span 9;
+.grid-item-1 { /*//nav bar two*/
+    grid-column: 6 / span 4;
     background-color: orange;
+    display:flex;
+    justify-content: flex-end;
 
 }
 
@@ -21,54 +23,70 @@
     grid-column: 1 /span 9;
     grid-row: 2 /span 2;
     background-color: red;
+    background-image: url('images/3b-348x348.jpg');
+    background-size: cover;
 }
 
 .grid-item-3 { /*//initial location*/
     grid-column: 1 /span 9;
     grid-row: 4;
     background-color: green;
+    margin-bottom: 50px;
+    display:flex;
+    justify-content: center;
 }
 
 .grid-item-4 { /*//locations 1*/
     grid-column: 1 /span 9;
     grid-row: 5 /span 2;
     background-color: yellow;
+    margin-bottom: 50px;
 }
 
 .grid-item-5 { /*//locations 2*/
     grid-column: 1 /span 9;
     grid-row: 7 /span 2;
     background-color: darkslateblue;
+    margin-bottom: 50px;
 }
 
 .grid-item-6 { /*//locations 3*/
     grid-column: 1 /span 9;
     grid-row: 9 /span 2;
     background-color: greenyellow;
+    margin-bottom: 50px;
 }
 
 .grid-item-7 { /*//amenities*/
     grid-column: 1 /span 9;
     grid-row: 11;
     background-color: teal;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
 }
 
 .grid-item-8 { /*//checkerboard 1*/
     grid-column: 1 /span 3;
     grid-row: 12 /span 3;
-    background-color: rosybrown ;
+    background-color: rosybrown;
+    background-image: url('images/3b-348x348.jpg');
+    background-size: cover;
 }
 
 .grid-item-9 { /*//checkerboard 2*/
     grid-column: 4 /span 3;
     grid-row: 12 /span 3;
     background-color: mediumpurple;
+
 }
 
 .grid-item-10 { /*//checkerboard 3*/
     grid-column: 7 /span 3;
     grid-row: 12 /span 3;
     background-color: orangered;
+    background-image: url('images/42-348x348.jpg');
+    background-size: cover;
 }
 
 .grid-item-11 { /*//checkerboard 4*/
@@ -81,6 +99,8 @@
     grid-column: 4 /span 3;
     grid-row: 15 /span 3;
     background-color: turquoise;
+    background-image: url('images/314-348x348.jpg');
+    background-size: cover;
 }
 
 .grid-item-13 { /*//checkerboard 6*/
@@ -93,6 +113,8 @@
     grid-column: 1 /span 3;
     grid-row: 18 /span 3;
     background-color: lightslategray;
+    background-image: url('images/Villa-Rucellai-Toscani-2812-2-348x348.jpg');
+    background-size: cover;
 }
 
 .grid-item-15 { /*//checkerboard 8*/
@@ -105,12 +127,17 @@
     grid-column: 7 /span 3;
     grid-row: 18 /span 3;
     background-color: palevioletred;
+    background-image: url('images/Villa-Vanna-231-348x348.jpg');
+    background-size: cover;
 }
 
 .grid-item-17 { /*//reviews*/
     grid-column: 1 /span 9;
     grid-row: 21;
     background-color: gold;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
 }
 
 .grid-item-18 { /*//carousel*/
@@ -123,6 +150,8 @@
     grid-column: 1 /span 9;
     grid-row: 24;
     background-color: fuchsia;
+    display: flex;
+    justify-content: center;
 }
 
 .grid-item-20 { /*//email section*/
@@ -136,3 +165,36 @@
     grid-row: 28 /span 2;
     background-color: aquamarine;
 }
+
+.grid-item-22 { /*//nav bar one*/
+    grid-column: 1 / span 5;
+    grid-row: 1;
+    background-color: mediumorchid;
+    display:flex;
+    justify-content: flex-start;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+    li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+        /* Change the link color to #111 (black) on hover */
+        li a:hover {
+            background-color: #111;
+        }
