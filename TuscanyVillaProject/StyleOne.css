@@ -13,10 +13,10 @@
 
 .grid-item-1 { /*//nav bar two*/
     grid-column: 6 / span 4;
-    background-color: orange;
-    display:flex;
+    background-color: darkslategrey;
+    display: flex;
     justify-content: flex-end;
-
+    text-decoration-color: white;
 }
 
 .grid-item-2 { /*//jumbotron*/
@@ -25,18 +25,22 @@
     background-color: red;
     background-image: url('images/3b-348x348.jpg');
     background-size: cover;
+    background-image: url('images/Versilia.jpg');
+    color: white;
 }
 
 .grid-item-3 { /*//initial location*/
     grid-column: 1 /span 9;
     grid-row: 4;
-    background-color: green;
+    background-color: darkslategrey;
     margin-bottom: 50px;
     display:flex;
     justify-content: center;
+    align-items:center;
+    color: white;
 }
 
-.grid-item-4 { /*//locations 1*/
+.grid-item-4 { /*//locations 1- split into two items*/
     grid-column: 1 /span 9;
     grid-row: 5 /span 2;
     background-color: yellow;
@@ -60,10 +64,12 @@
 .grid-item-7 { /*//amenities*/
     grid-column: 1 /span 9;
     grid-row: 11;
-    background-color: teal;
+    background-color: darkslategrey;
     margin-bottom: 50px;
     display: flex;
     justify-content: center;
+    color: white;
+    flex-direction: column;
 }
 
 .grid-item-8 { /*//checkerboard 1*/
@@ -72,12 +78,15 @@
     background-color: rosybrown;
     background-image: url('images/3b-348x348.jpg');
     background-size: cover;
+    color: white;
+    align-items: center;
 }
 
 .grid-item-9 { /*//checkerboard 2*/
     grid-column: 4 /span 3;
     grid-row: 12 /span 3;
-    background-color: mediumpurple;
+    background-color: white;
+    color: darkslategrey;
 
 }
 
@@ -87,12 +96,14 @@
     background-color: orangered;
     background-image: url('images/42-348x348.jpg');
     background-size: cover;
+    color: white;
 }
 
 .grid-item-11 { /*//checkerboard 4*/
     grid-column: 1 /span 3;
     grid-row: 15 /span 3;
-    background-color: hotpink;
+    background-color: white;
+    color: darkslategrey;
 }
 
 .grid-item-12 { /*//checkerboard 5*/
@@ -101,12 +112,14 @@
     background-color: turquoise;
     background-image: url('images/314-348x348.jpg');
     background-size: cover;
+    color: white;
 }
 
 .grid-item-13 { /*//checkerboard 6*/
     grid-column: 7 /span 3;
     grid-row: 15 /span 3;
-    background-color: brown;
+    background-color: white;
+    color: darkslategrey;
 }
 
 .grid-item-14 { /*//checkerboard 7*/
@@ -115,12 +128,14 @@
     background-color: lightslategray;
     background-image: url('images/Villa-Rucellai-Toscani-2812-2-348x348.jpg');
     background-size: cover;
+    color: white;
 }
 
 .grid-item-15 { /*//checkerboard 8*/
     grid-column: 4 /span 3;
     grid-row: 18 /span 3;
-    background-color: blueviolet;
+    background-color: white;
+    color: darkslategrey;
 }
 
 .grid-item-16 { /*//checkerboard 9*/
@@ -129,29 +144,33 @@
     background-color: palevioletred;
     background-image: url('images/Villa-Vanna-231-348x348.jpg');
     background-size: cover;
+    color: white;
 }
 
 .grid-item-17 { /*//reviews*/
     grid-column: 1 /span 9;
     grid-row: 21;
-    background-color: gold;
+    background-color: darkslategrey;
     margin-top: 50px;
     display: flex;
     justify-content: center;
+    color: white;
 }
 
 .grid-item-18 { /*//carousel*/
     grid-column: 1 /span 9;
     grid-row: 22 /span 2;
     background-color: silver;
+
 }
 
 .grid-item-19 { /*//contact*/
     grid-column: 1 /span 9;
     grid-row: 24;
-    background-color: fuchsia;
+    background-color: darkslategrey;
     display: flex;
     justify-content: center;
+    color: white;
 }
 
 .grid-item-20 { /*//email section*/
@@ -169,9 +188,10 @@
 .grid-item-22 { /*//nav bar one*/
     grid-column: 1 / span 5;
     grid-row: 1;
-    background-color: mediumorchid;
+    background-color: darkslategrey;
     display:flex;
     justify-content: flex-start;
+    text-decoration-color: white;
 }
 
 ul {
@@ -179,7 +199,7 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
+    background-color: darkslategrey;
 }
 
 li {
@@ -198,3 +218,89 @@ li {
         li a:hover {
             background-color: #111;
         }
+
+/*.carousel-wrapper {
+    height: 200px;
+    position: absolute;
+    width: 690px;
+    margin: 0 auto;
+}
+
+.carousel-item {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 25px 50px;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+.arrow {
+    position: absolute;
+    top: 0;
+    display: block;
+    width: 50px;
+    height: 100%;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    background: url("http://dancort.es/assets/img/css-carousel/carousel-arrow-dark.png") 50% 50% / 20px no-repeat;
+}
+
+.arrow-prev {
+    left: 0;
+}
+
+.arrow-next {
+    right: 0;
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+.light {
+    color: white;
+}
+
+@media (max-width: 480px) {
+    .arrow, .light .arrow {
+        background-size: 10px;
+        background-position: 10px 50%;
+    }
+}
+
+}
+
+/*Select every element*/
+[id^="item"] {
+    display: none;
+}
+
+.item-1 {
+    z-index: 2;
+    opacity: 1;
+    background: url('images/20170303-blueberry-lemon-vegan-scones-vicky-wasik-7-1500x1125- coffee carousel 3.jpg');
+    background-size: cover;
+}
+
+.item-2 {
+    background: url('images/coffee carousel 1.jpg');
+    background-size: cover;
+}
+
+.item-3 {
+    background: url('images/coffee carousel 2.jpg');
+    background-size: cover;
+}
+
+*:target ~ .item-1 {
+    opacity: 0;
+}
+
+#item-1:target ~ .item-1 {
+    opacity: 1;
+}
+
+#item-2:target ~ .item-2, #item-3:target ~ .item-3 {
+    z-index: 3;
+    opacity: 1;
+}*/
