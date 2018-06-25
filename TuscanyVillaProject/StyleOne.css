@@ -67,7 +67,9 @@
     background-repeat: no-repeat;
     text-align: center;
     background-position: 100% 95%;
-    font-size:12px;
+    font-size: 12px;
+    display: flex;
+    justify-content: flex-start;
 }
 
 .grid-item-6 { /*//locations 3*/
@@ -78,8 +80,10 @@
     background-image: url('images/tuscany-grape-field-nature-51947.jpeg');
     background-size: 250px;
     background-repeat: no-repeat;
-    text-align:center;
-    font-size:12px;
+    text-align: center;
+    font-size: 12px;
+    display: flex;
+    justify-content: flex-end;
 }
 
 .grid-item-7 { /*//amenities*/
@@ -102,8 +106,8 @@
     background-size: cover;
     color: white;
     align-items: center;
-    text-align:center;
-    
+    text-align: center;
+    font-size: 13px;
 }
 
 .grid-item-9 { /*//checkerboard 2*/
@@ -111,7 +115,7 @@
     grid-row: 12 /span 3;
     background-color: white;
     color: darkslategrey;
-    font-size: 15px;
+    font-size: 13px;
     text-align:center;
 }
 
@@ -122,7 +126,8 @@
     background-image: url('images/42-348x348.jpg');
     background-size: cover;
     color: white;
-    text-align:center;
+    text-align: center;
+    font-size: 13px;
 }
 
 .grid-item-11 { /*//checkerboard 4*/
@@ -130,7 +135,7 @@
     grid-row: 15 /span 3;
     background-color: white;
     color: darkslategrey;
-    font-size:15px;
+    font-size:13px;
     text-align:center;
 }
 
@@ -141,7 +146,8 @@
     background-image: url('images/314-348x348.jpg');
     background-size: cover;
     color: white;
-    text-align:center;
+    text-align: center;
+    font-size: 13px;
 }
 
 .grid-item-13 { /*//checkerboard 6*/
@@ -149,7 +155,7 @@
     grid-row: 15 /span 3;
     background-color: white;
     color: darkslategrey;
-    font-size: 15px;
+    font-size: 13px;
     text-align:center;
 }
 
@@ -160,7 +166,8 @@
     background-image: url('images/Villa-Rucellai-Toscani-2812-2-348x348.jpg');
     background-size: cover;
     color: white;
-    text-align:center;
+    text-align: center;
+    font-size: 13px;
 }
 
 .grid-item-15 { /*//checkerboard 8*/
@@ -168,7 +175,7 @@
     grid-row: 18 /span 3;
     background-color: white;
     color: darkslategrey;
-    font-size: 15px;
+    font-size: 13px;
     text-align:center;
 }
 
@@ -216,14 +223,20 @@
 .grid-item-20 { /*//email section*/
     grid-column: 1 /span 9;
     grid-row: 25 /span 3;
-    background-color: tan;
+    background-color: white;
+    color:darkslategrey;
 }
 
 .grid-item-21 { /*//vertical carousel*/
     grid-column: 1 /span 9;
     grid-row: 28 /span 2;
     background-color: darkslategrey;
-    color:white;
+    color: white;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 11px;
+    flex-direction: column;
 }
 
 .grid-item-22 { /*//nav bar one*/
@@ -245,6 +258,9 @@
     background-repeat: no-repeat;
 }
 
+.location{
+    max-width:250px;
+}
 
 ul {
     list-style-type: none;
